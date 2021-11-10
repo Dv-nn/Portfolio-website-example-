@@ -13,4 +13,11 @@ closeElem.addEventListener('click', () => {
 });
 
 
-// ---------  hamburger ----------------------------
+// ---------  raiting-counter -----------------------
+const counters = document.querySelectorAll('.skills__raitings-counter'),
+   lines = document.querySelectorAll('.skills__raitings-line span');
+
+counters.forEach( (item, i) => {
+   lines[i].style.width = item.innerHTML;
+});
+
