@@ -14,10 +14,10 @@ closeElem.addEventListener('click', () => {
 
 
 // ---------  raiting-counter -----------------------
-const counters = document.querySelectorAll('.skills__raitings-counter'),
-   lines = document.querySelectorAll('.skills__raitings-line span');
+const counters = document.querySelectorAll('.skills__ratings-counter'),
+      lines = document.querySelectorAll('.skills__ratings-line span');
 
-counters.forEach( (item, i) => {
-   lines[i].style.width = item.innerHTML;
+counters.forEach( function(item, i) {
+    lines[i].style.width = item.innerHTML;
 });
 
